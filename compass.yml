@@ -7,16 +7,14 @@ typeId: SERVICE
 fields:
   tier: 3
   lifecycle: Active
-  isMonorepoProject: true
-links: [
-  - name: DEV
+  isMonorepoProject: false
+links:
+  name: DEV
     type: PROJECT
     url: 'https://anduin-webworks.atlassian.net/jira/software/c/projects/DEV/boards/2'
-]
 relationships:
-  DEPENDS_ON: [
-      - 'ari:cloud:compass:a9370046-464a-4000-8146-9d92acfbc728:component/70fcc8de-61e0-4324-b640-e292e7692006/838cef4c-0395-45b5-84aa-f731981ea92e'
-  ]
+  DEPENDS_ON:
+      'ari:cloud:compass:a9370046-464a-4000-8146-9d92acfbc728:component/70fcc8de-61e0-4324-b640-e292e7692006/838cef4c-0395-45b5-84aa-f731981ea92e'
 labels:
   - language:html
   - source:github

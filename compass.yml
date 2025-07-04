@@ -2,12 +2,21 @@ name: doc-agenda
 id: ari:cloud:compass:a9370046-464a-4000-8146-9d92acfbc728:component/70fcc8de-61e0-4324-b640-e292e7692006/26bd7e77-90e4-45ef-8fd8-ebf89614daf1
 description: null
 configVersion: 1
+ownerId: 'ari:cloud:teams::team/258db5ee-800c-4eff-9b92-9908d8f84f8b'
 typeId: SERVICE
 fields:
-  tier: 4
-links: []
+  tier: 3
+  lifecycle: Active
+  isMonorepoProject: true
+links: [
+  - name: DEV
+    type: PROJECT
+    url: 'https://anduin-webworks.atlassian.net/jira/software/c/projects/DEV/boards/2'
+]
 relationships:
-  DEPENDS_ON: []
+  DEPENDS_ON: [
+      - 'ari:cloud:compass:a9370046-464a-4000-8146-9d92acfbc728:component/70fcc8de-61e0-4324-b640-e292e7692006/838cef4c-0395-45b5-84aa-f731981ea92e'
+  ]
 labels:
   - language:html
   - source:github
